@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class MainPageController extends AbstractController
+class FavouritesController extends AbstractController
 {
-    #[Route('/', name: 'main_page')]
+    #[Route('/favourites', name: 'app_favourites')]
     public function index(): Response
     {
-        return $this->render('main_page/index.html.twig', [
-            'website_name' => 'Drink it',
+        return $this->render('favourites/index.html.twig', [
+            'controller_name' => 'Favourites',
         ]);
     }
 }
