@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a803795-08bb-4e21-ae42-3b96aa6714a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20220619181857.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20220619181857.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DrinkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DrinkController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MainPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainPageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Drink.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Drink.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/drink/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/drink/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main_page/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main_page/index.html.twig" afterDir="false" />
     </list>
@@ -209,7 +203,7 @@
       <workItem from="1655733831414" duration="688000" />
       <workItem from="1655797637933" duration="9000" />
       <workItem from="1655798312653" duration="7436000" />
-      <workItem from="1655815210325" duration="883000" />
+      <workItem from="1655815210325" duration="6343000" />
     </task>
     <servers />
   </component>

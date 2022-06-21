@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-{% block title %}{{ drink_name }}{% endblock %}
+{% block title %}{{ drink.name }}{% endblock %}
 
 {% block header %}
     <head>
@@ -17,16 +17,16 @@
         <div class="container px-4 px-lg-5 my-5">
 
             <div class="row gx-4 gx-lg-5 align-items-center">
-                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src={{ drink_image }} alt="..." /></div>
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src={{ drink.image }} alt="..." /></div>
                 <div class="col-md-6">
-                    <h1 class="display-5 fw-bolder">{{ drink_name }}</h1>
+                    <h1 class="display-5 fw-bolder">{{ drink.name }}</h1>
                     <div class="fs-5 mb-5">
-                        <span class="text-decoration-line-through">{{ drink_type }}</span><br>
-                        <span class="text-decoration-line-through">{{ drink_glass }}</span>
+                        <span class="text-decoration-line-through">{{ drink.type }}</span><br>
+                        <span class="text-decoration-line-through">{{ drink.glass }}</span>
                     </div>
-                    <p class="lead">{{ drink_ingredients }}</p>
+                    <p class="lead">{{ drink.ingredients }}</p>
 
-                    <p class="lead">{{ drink_instruction }}</p>
+                    <p class="lead">{{ drink.instruction }}</p>
                     <div class="d-flex">
                         <button class="btn btn-outline-dark flex-shrink-0" type="button">
                             <i class="bi bi-heart"></i>
