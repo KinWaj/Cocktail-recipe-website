@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controller;
-
+use App\Repository\DrinkRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -9,10 +9,10 @@ use Symfony\Component\Routing\Annotation\Route;
 class MainPageController extends AbstractController
 {
     #[Route('/', name: 'main_page')]
-    public function index(): Response
+    public function index(DrinkRepository $drinkRepository): Response
     {
         return $this->render('main_page/index.html.twig', [
-            'website_name' => 'Drink it',
+            'drinks' =>$drinkRepository->findAll()
         ]);
     }
 }

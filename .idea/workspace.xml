@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a803795-08bb-4e21-ae42-3b96aa6714a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220619181857.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20220619181857.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DrinkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DrinkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainPageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Drink.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Drink.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/favourites/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/favourites/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/drink/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/drink/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main_page/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main_page/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -189,7 +204,12 @@
       <updated>1655200095802</updated>
       <workItem from="1655200102844" duration="672000" />
       <workItem from="1655564420877" duration="3486000" />
-      <workItem from="1655630933116" duration="17599000" />
+      <workItem from="1655630933116" duration="18209000" />
+      <workItem from="1655714293730" duration="2642000" />
+      <workItem from="1655733831414" duration="688000" />
+      <workItem from="1655797637933" duration="9000" />
+      <workItem from="1655798312653" duration="7436000" />
+      <workItem from="1655815210325" duration="883000" />
     </task>
     <servers />
   </component>

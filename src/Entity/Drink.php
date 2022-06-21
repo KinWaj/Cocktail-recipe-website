@@ -26,7 +26,7 @@ class Drink
     private $instruction;
 
     #[ORM\Column(type: 'text')]
-    private $ingridients;
+    private $ingredients;
 
     #[ORM\Column(type: 'string', length: 255)]
     private $image;
@@ -84,14 +84,14 @@ class Drink
         return $this;
     }
 
-    public function getIngridients(): ?string
+    public function getIngredients(): ?string
     {
-        return $this->ingridients;
+        return $this->ingredients;
     }
 
-    public function setIngridients(string $ingridients): self
+    public function setIngredients(string $ingredients): self
     {
-        $this->ingridients = $ingridients;
+        $this->ingridients = $ingredients;
 
         return $this;
     }
