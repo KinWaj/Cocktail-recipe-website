@@ -20,7 +20,11 @@
 
         <form class="navbar-nav d-flex">
             {% if is_granted('ROLE_USER') %}
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="/favourites">Favourites <span class="badge bg-dark text-white ms-1 rounded-pill">0</span></a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/admin">Admin Panel </a></li>
+                <div class="text-center"> <a class="btn btn-outline-dark mt-auto" href="{{ path('app_logout') }}">Log out</a></div>
+
+            {% elseif is_granted('ROLE_ADMIN')%}
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/favourites">Favourites <span class="badge bg-dark text-white ms-1 rounded-pill">0</span></a></li>
                 <div class="text-center"> <a class="btn btn-outline-dark mt-auto" href="{{ path('app_logout') }}">Log out</a></div>
             {% else %}
             <div class="text-center"> <a href="/login" class="btn btn-outline-dark mt-auto"  >Log in</a></div>
