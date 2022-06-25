@@ -28,10 +28,12 @@
 
                     <p class="lead">{{ drink.instruction }}</p>
                     <div class="d-flex">
+                        {% if is_granted('ROLE_USER') %}
                         <button class="btn btn-outline-dark flex-shrink-0" type="button">
                             <i class="bi bi-heart"></i>
                             Favourite
                         </button>
+                        {% endif %}
                         <button class="btn btn-outline-dark flex-shrink-0" type="submit" >
                             <i class="bi bi-download"></i>
                             Download

@@ -13,7 +13,12 @@ class MainPageController extends AbstractController
     public function index(DrinkRepository $drinkRepository): Response
     {
         return $this->render('main_page/index.html.twig', [
-           'drinks' =>$drinkRepository->findAll()
+            'drinks' => $drinkRepository->findAll()
         ]);
     }
+
+
+
 }
+
+

@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+{% block navigation %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="/">DRINKIT</a>
+
+            <form class="navbar-nav d-flex">
+                Welcome to Drink It!
+            </form>
+
+        </div>
+        </div>
+    </nav>
+{% endblock %}
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+<form method="post">
+
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            {% if error %}
+                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+            <div class="row d-flex align-items-center justify-content-center h-75">
+
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                    <form>
+                        <!-- Username input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" value="{{ last_username }}" name="username" id="inputUsername" autocomplete="username" required autofocus class="form-control form-control-lg" />
+                            <label class="form-label" for="inputUsername">Username</label>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" name="password" id="inputPassword" class="form-control form-control-lg" autocomplete="current-password" required />
+                            <label class="form-label" for="inputPassword">Password</label>
+                        </div>
+                        <input type="hidden" name="_csrf_token"
+                               value="{{ csrf_token('authenticate') }}"
+                        >
+
+                        <div class="d-flex justify-content-around align-items-center mb-4">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                                <input type="checkbox" name="_remember_me" class="form-check-input" value="" checked />
+                                <label class="form-check-label" for="form1Example3"> Remember me </label>
+                            </div>
+                            <a href="#!">Don't have an account? Click here!</a>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+
+                        <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                        </div>
+
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
+                           role="button">
+                            <i class="fab fa-facebook-f me-2"></i>Sign in as an admin </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</form>
+{% endblock %}
