@@ -14,9 +14,13 @@ class DrinkController extends AbstractController
     public function index(Drink $drink): Response
 
     {
+
         return $this->render('drink/index.html.twig', [
             'drink' => $drink,
         ]);
     }
+
+
+
 
 }

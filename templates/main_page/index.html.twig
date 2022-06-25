@@ -1,12 +1,21 @@
 {%extends 'base.html.twig' %}
 {% block title %}DRINK IT{% endblock %}
 {% block header %}
+
     <header  class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
              style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp')">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Find your favourite drink</h1>
-                <p class="lead fw-normal text-white-50 mb-0">and make it at home</p>
+                <p class="lead fw-normal text-white-50 mb-0">and make it at home</p><br><br>
+                <div class="container d-flex justify-content-center" style="width: 525px">
+                        <div class="input-group mb-3" >
+                            <input type="text" class="form-control">
+                            <div class="input-group-append" ><button class="btn btn-primary"><i class="bi bi-search"></i></button></div>
+                        </div>
+                </div>
+
+                </div>
             </div>
         </div>
     </header>
@@ -17,6 +26,8 @@
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+
 
 {% for drink in drinks %}
 
